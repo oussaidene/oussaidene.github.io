@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Personal academic webpage of Oussaidene Smail, PhD researcher in neural information retrieval, generative retrieval, NLP, and deep learning." />
+  <meta name="author" content="Oussaidene Smail" />
+  <title>Oussaidene Smail | Academic Webpage</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a class="brand" href="#top">Oussaidene Smail</a>
+      <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+      <div class="nav-links" id="navLinks">
+        <a href="#about" data-i18n="nav_about">About</a>
+        <a href="#research" data-i18n="nav_research">Research</a>
+        <a href="#education" data-i18n="nav_education">Education</a>
+        <a href="#teaching" data-i18n="nav_teaching">Teaching</a>
+        <a href="#publications" data-i18n="nav_publications">Publications</a>
+        <a href="#skills" data-i18n="nav_skills">Skills</a>
+        <a href="#contact" data-i18n="nav_contact">Contact</a>
+      </div>
+      <div class="language-switch" aria-label="Language selector">
+        <button class="lang-btn active" data-lang="en">EN</button>
+        <button class="lang-btn" data-lang="fr">FR</button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero section">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <p class="eyebrow" data-i18n="hero_eyebrow">PhD Researcher in Computer Science</p>
+          <h1>Oussaidene Smail</h1>
+          <p class="subtitle" data-i18n="hero_subtitle">Neural information retrieval, generative retrieval, NLP, and deep learning</p>
+          <p class="hero-summary" data-i18n="hero_summary">
+            I work on neural and generative information retrieval, with a focus on text-to-text architectures, document identifier generation, constrained decoding, and experimental evaluation of retrieval systems.
+          </p>
+          <div class="hero-actions">
+            <a class="btn primary" href="#contact" data-i18n="btn_contact">Contact</a>
+            <a class="btn secondary" href="https://orcid.org/0000-0001-7747-0658" target="_blank" rel="noopener noreferrer">ORCID</a>
+            <a class="btn secondary" href="https://scholar.google.com/citations?user=821OfnMAAAAJ&hl=fr&oi=ao" target="_blank" rel="noopener noreferrer">Google Scholar</a>
+          </div>
+        </div>
+        <aside class="profile-card" aria-label="Profile summary">
+          <div class="avatar" aria-hidden="true">OS</div>
+          <h2>Oussaidene Smail</h2>
+          <p data-i18n="profile_role">PhD researcher, Université Toulouse III - Paul Sabatier</p>
+          <ul>
+            <li data-i18n="profile_line1">Computer Science</li>
+            <li data-i18n="profile_line2">Neural and Generative IR</li>
+            <li data-i18n="profile_line3">Deep Learning for NLP</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container two-column">
+        <div>
+          <p class="section-label" data-i18n="about_label">About</p>
+          <h2 data-i18n="about_title">Academic profile</h2>
+        </div>
+        <div class="content-block">
+          <p data-i18n="about_text1">
+            I am a PhD researcher in computer science at Université Toulouse III - Paul Sabatier. My research focuses on neural information retrieval, generative retrieval models, and text-to-text architectures for indexing and ranking.
+          </p>
+          <p data-i18n="about_text2">
+            My work investigates how documents can be represented, indexed, and retrieved using neural and generative models, including document identifiers, passage-level representations, constrained decoding, and retrieval-oriented evaluation.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="research" class="section alt">
+      <div class="container">
+        <p class="section-label" data-i18n="research_label">Research</p>
+        <h2 data-i18n="research_title">Research interests</h2>
+        <div class="research-narrative">
+          <p data-i18n="research_intro1">
+            My research is situated at the intersection of information retrieval, natural language processing, and deep learning. I study how neural models can represent large document collections and how retrieval systems can move beyond classical keyword matching while still preserving exact-match signals that are often essential for factual, technical, and entity-centered queries. This includes work on dense retrieval, neural ranking, lexical-semantic matching, and the empirical analysis of retrieval behavior across different evaluation settings.
+          </p>
+          <p data-i18n="research_intro2">
+            A central part of my PhD work focuses on generative retrieval, where the retrieval task is formulated as a text-to-text generation problem. Instead of scoring documents only through a conventional index, the model learns to generate document identifiers or structured textual representations that point to relevant documents. I am particularly interested in the design of document identifiers, passage-level supervision, constrained decoding, multi-identifier representations, and the failure modes that appear when autoregressive decoding prunes relevant identifiers too early during inference.
+          </p>
+          <p data-i18n="research_intro3">
+            Methodologically, my work combines model design, dataset construction, large-scale training, and careful evaluation. I work with Transformer-based architectures such as T5-style models, fine-tuning pipelines, retrieval benchmarks, and metrics such as Recall@k, MRR, and nDCG. I also pay close attention to reproducibility, error analysis, statistical comparison, and the interpretation of retrieval outputs, especially when comparing generative retrieval methods with dense, sparse, or hybrid baselines.
+          </p>
+        </div>
+        <div class="cards four">
+          <article class="card">
+            <h3 data-i18n="research_card1_title">Neural information retrieval</h3>
+            <p data-i18n="research_card1_text">Dense retrieval, neural ranking, lexical and semantic matching, and retrieval effectiveness analysis.</p>
+          </article>
+          <article class="card">
+            <h3 data-i18n="research_card2_title">Generative retrieval</h3>
+            <p data-i18n="research_card2_text">Text-to-text retrieval, document identifier generation, constrained decoding, and sequence-based indexing.</p>
+          </article>
+          <article class="card">
+            <h3 data-i18n="research_card3_title">Deep learning for NLP</h3>
+            <p data-i18n="research_card3_text">Transformers, T5-style models, fine-tuning, representation learning, and model evaluation.</p>
+          </article>
+          <article class="card">
+            <h3 data-i18n="research_card4_title">Evaluation and analysis</h3>
+            <p data-i18n="research_card4_text">Recall@k, MRR, nDCG, error analysis, statistical comparison, and reproducible experiments.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="education" class="section">
+      <div class="container">
+        <p class="section-label" data-i18n="education_label">Education</p>
+        <h2 data-i18n="education_title">Education</h2>
+        <div class="timeline">
+          <article class="timeline-item">
+            <span class="date" data-i18n="edu_phd_date">Since Oct. 2023</span>
+            <h3 data-i18n="edu_phd_title">PhD in Computer Science</h3>
+            <p data-i18n="edu_phd_place">Université Toulouse III - Paul Sabatier</p>
+            <p data-i18n="edu_phd_desc">Research on information retrieval and deep learning, with emphasis on text-to-text generative retrieval models, document representations, and ranking.</p>
+          </article>
+          <article class="timeline-item">
+            <span class="date">2023</span>
+            <h3 data-i18n="edu_master_title">Academic Master in Computer Science</h3>
+            <p data-i18n="edu_master_place">École Supérieure d’Informatique d’Alger</p>
+            <p data-i18n="edu_master_desc">Master thesis on the transferability of dense ranking models.</p>
+          </article>
+          <article class="timeline-item">
+            <span class="date">2018-2023</span>
+            <h3 data-i18n="edu_engineer_title">State Engineering Degree in Computer Science</h3>
+            <p data-i18n="edu_engineer_place">École Supérieure d’Informatique d’Alger</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="section alt">
+      <div class="container">
+        <p class="section-label" data-i18n="experience_label">Experience</p>
+        <h2 data-i18n="experience_title">Research experience</h2>
+        <div class="timeline">
+          <article class="timeline-item">
+            <span class="date" data-i18n="exp_phd_date">Since Oct. 2023</span>
+            <h3 data-i18n="exp_phd_title">PhD Researcher, Université Toulouse III - Paul Sabatier</h3>
+            <ul>
+              <li data-i18n="exp_phd_1">Design and evaluation of neural and generative information retrieval models.</li>
+              <li data-i18n="exp_phd_2">Study of text-to-text models for indexing, document identifier generation, and ranking.</li>
+              <li data-i18n="exp_phd_3">Analysis of constrained decoding and its effect on document selection during inference.</li>
+              <li data-i18n="exp_phd_4">Reproducible experiments covering data preparation, training, evaluation, statistical analysis, and result synthesis.</li>
+            </ul>
+          </article>
+          <article class="timeline-item">
+            <span class="date">2022-2023</span>
+            <h3 data-i18n="exp_intern_title">Research intern, Université Toulouse III - Paul Sabatier</h3>
+            <ul>
+              <li data-i18n="exp_intern_1">Work on information retrieval, dense models, language modeling, and lexical-semantic matching.</li>
+              <li data-i18n="exp_intern_2">Study of dense ranking model transferability and comparison with exact-match signals.</li>
+              <li data-i18n="exp_intern_3">Experiments with bi-encoder models and retrieval performance analysis.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="teaching" class="section">
+      <div class="container">
+        <p class="section-label" data-i18n="teaching_label">Teaching</p>
+        <h2 data-i18n="teaching_title">Teaching experience</h2>
+        <div class="teaching-grid">
+          <article class="card large-card">
+            <span class="date">2023-2025</span>
+            <h3 data-i18n="teaching_role">Teaching assistant, IUT Toulouse, Department of Computer Science</h3>
+            <p data-i18n="teaching_general">Preparation of practical sessions, supervision of tutorials and labs, student support, grading, assessment, and exam supervision.</p>
+          </article>
+          <article class="card">
+            <h3 data-i18n="teaching_db_title">Databases and data management</h3>
+            <p data-i18n="teaching_db_text">SQL, NoSQL, MongoDB, relational and non-relational data models, data organization, and data protection.</p>
+          </article>
+          <article class="card">
+            <h3 data-i18n="teaching_uml_title">Software modeling</h3>
+            <p data-i18n="teaching_uml_text">UML, object-oriented design, Modélio, requirements formalization, and simple software design workflows.</p>
+          </article>
+          <article class="card">
+            <h3 data-i18n="teaching_cs_title">Computer science foundations</h3>
+            <p data-i18n="teaching_cs_text">Programming, algorithms, data structures, object-oriented programming, and applied computer science methodology.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="publications" class="section alt">
+      <div class="container">
+        <p class="section-label" data-i18n="publications_label">Publications</p>
+        <h2 data-i18n="publications_title">Publications and scientific communications</h2>
+        <div class="publication-list">
+          <article class="publication">
+            <p><strong>Oussaidene, S., Said L’Hadj, L., &amp; Boughanem, M.</strong> (2024). <span data-i18n="pub1_title">MarkedDPR: Enhancing Dense Passage Retrieval with Exact Match Signals and Synthetic Data Augmentation.</span> <em>WISE 2024</em>.</p>
+          </article>
+          <article class="publication">
+            <p><strong>Oussaidene, S., Said L’Hadj, L., &amp; Boughanem, M.</strong> (2024). <span data-i18n="pub2_title">MarkedDPR: Un bi-encodeur exploitant la correspondance lexicale.</span> <em>CORIA-RJCRI 2024</em>.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <div class="container">
+        <p class="section-label" data-i18n="skills_label">Skills</p>
+        <h2 data-i18n="skills_title">Scientific, technical, and teaching skills</h2>
+        <div class="skills-grid">
+          <div class="skill-group">
+            <h3 data-i18n="skills_ir_title">Information retrieval</h3>
+            <p data-i18n="skills_ir_text">Dense retrieval, generative retrieval, neural ranking, exact-match signals, evaluation metrics.</p>
+          </div>
+          <div class="skill-group">
+            <h3 data-i18n="skills_nlp_title">NLP and deep learning</h3>
+            <p data-i18n="skills_nlp_text">Transformers, T5, fine-tuning, text-to-text models, PyTorch, Hugging Face.</p>
+          </div>
+          <div class="skill-group">
+            <h3 data-i18n="skills_programming_title">Programming and data</h3>
+            <p data-i18n="skills_programming_text">Python, SQL, NoSQL, MongoDB, algorithms, data structures, object-oriented programming.</p>
+          </div>
+          <div class="skill-group">
+            <h3 data-i18n="skills_modeling_title">Software modeling and design</h3>
+            <p data-i18n="skills_modeling_text">UML, Modélio, object-oriented analysis and design, requirements formalization, class diagrams, use-case diagrams, and software design methodology.</p>
+          </div>
+          <div class="skill-group">
+            <h3 data-i18n="skills_exp_title">Experimentation</h3>
+            <p data-i18n="skills_exp_text">Corpus preparation, model training, evaluation scripts, Recall@k, MRR, nDCG, error analysis.</p>
+          </div>
+          <div class="skill-group">
+            <h3 data-i18n="skills_compute_title">Computing environment</h3>
+            <p data-i18n="skills_compute_text">Linux, shell scripting, GPU-based experiments, experiment tracking, and high-performance computing workflows.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="languages" class="section alt">
+      <div class="container">
+        <p class="section-label" data-i18n="languages_label">Languages</p>
+        <h2 data-i18n="languages_title">Languages</h2>
+        <div class="language-cards">
+          <div class="language-card"><strong data-i18n="lang_fr">French</strong><span data-i18n="lang_fr_level">Fluent</span></div>
+          <div class="language-card"><strong data-i18n="lang_en">English</strong><span data-i18n="lang_en_level">Scientific and technical use</span></div>
+          <div class="language-card"><strong data-i18n="lang_ar">Arabic</strong><span data-i18n="lang_ar_level">Native language</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact-section">
+      <div class="container contact-grid">
+        <div>
+          <p class="section-label" data-i18n="contact_label">Contact</p>
+          <h2 data-i18n="contact_title">Get in touch</h2>
+          <p data-i18n="contact_text">For academic contact, research collaboration, teaching opportunities, or questions about my work, you can reach me by email or through my academic profiles.</p>
+        </div>
+        <div class="contact-card">
+          <p><strong>Email:</strong> <a href="mailto:oussaidene.sma@gmail.com">oussaidene.sma@gmail.com</a></p>
+          <p><strong>ORCID:</strong> <a href="https://orcid.org/0000-0001-7747-0658" target="_blank" rel="noopener noreferrer">0000-0001-7747-0658</a></p>
+          <p><strong>Google Scholar:</strong> <a href="https://scholar.google.com/citations?user=821OfnMAAAAJ&hl=fr&oi=ao" target="_blank" rel="noopener noreferrer" data-i18n="scholar_link">Profile</a></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-content">
+      <p>© <span id="year"></span> Oussaidene Smail</p>
+      <a href="#top" data-i18n="back_top">Back to top</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
